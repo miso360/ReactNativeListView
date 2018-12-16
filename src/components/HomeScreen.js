@@ -1,8 +1,8 @@
 import React,{ Component } from 'react';
 import {TabBarIOS, Text} from 'react-native';
+import ItemList from './ItemList';
 
-
-export default class Main extends Component {
+export default class HomeScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,8 +17,13 @@ export default class Main extends Component {
                     systemIcon={'featured'}
                     selected={this.state.tab === 'newsFeed'}
                 >
-                   
+                   <ItemList/>
                 </TabBarIOS.Item>
+                <TabBarIOS.Item
+                    systemIcon={"search"}
+                    selected={this.state.tab === 'search'}
+                >
+                </TabBarIOS.Item>                
                 <TabBarIOS.Item
                     badge={3}
                     systemIcon={'bookmarks'}
