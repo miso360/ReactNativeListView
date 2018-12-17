@@ -4,4 +4,4 @@ android/**/*
 ios/**/*
 .DS*
 .vscode
-.package-lock.json
+package-lock.json

@@ -6,7 +6,7 @@ export default class HomeScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tab: 'newsFeed'
+            tab: 'itemList'
         };
     }
 
@@ -15,7 +15,7 @@ export default class HomeScreen extends Component {
             <TabBarIOS>
                 <TabBarIOS.Item
                     systemIcon={'featured'}
-                    selected={this.state.tab === 'newsFeed'}
+                    selected={this.state.tab === 'itemList'}
                 >
                    <ItemList/>
                 </TabBarIOS.Item>
