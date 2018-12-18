@@ -18,15 +18,15 @@ export default class ItemList extends Component {
 
   renderItem = ({item}) => {
     return (
-      <View>
-        <Image style={{width:100, height:100}}
+      <View style={{flex:1, flexDirection: 'row', marginBottom: 3}}>
+        <Image style={{width:80, height:80}}
           source={{ uri: item.image }}
         />
-        <View>
-          <Text>
+        <View style={{flex:1, justifyContent: 'center'}}>
+          <Text style={{fontSize:18, marginBottom: 15}}>
             {item.book_title}
           </Text>
-          <Text>
+          <Text style={{fontSize:16}}>
             {item.author}
           </Text>
         </View>
@@ -64,8 +64,6 @@ export default class ItemList extends Component {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   }
 });
