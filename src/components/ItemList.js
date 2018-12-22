@@ -7,6 +7,8 @@ import {
   Image,
   ActivityIndicator
 } from 'react-native';
+import ItemView from './ItemView';
+
 
 export default class ItemList extends Component {
   constructor() {
@@ -19,7 +21,7 @@ export default class ItemList extends Component {
 
   renderItem = ({item}) => {
     return (
-      <View style={{flex:1, flexDirection: 'row', marginBottom: 3}}>
+      <View style={{flex:1, flexDirection: 'row', marginBottom: 3}} onPress={<ItemView/>}>
         <Image style={{width:80, height:80, margitn:5}}
           source={{ uri: item.image }}
         />
