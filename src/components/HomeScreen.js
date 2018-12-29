@@ -1,6 +1,7 @@
 import React,{ Component } from 'react';
 import {TabBarIOS, Text} from 'react-native';
 import ItemList from './ItemList';
+import ItemList2 from './ItemList2';
 
 export default class HomeScreen extends Component {
     constructor(props) {
@@ -23,6 +24,7 @@ export default class HomeScreen extends Component {
                     systemIcon={"search"}
                     selected={this.state.tab === 'search'}
                 >
+                    <ItemList2/>
                 </TabBarIOS.Item>                
                 <TabBarIOS.Item
                     badge={3}
