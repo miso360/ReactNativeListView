@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import {TabBarIOS, Text} from 'react-native';
 import ItemList from './ItemList';
 import ItemList2 from './ItemList2';
+//import Users from './Users';
 
 export default class HomeScreen extends Component {
     constructor(props) {
@@ -31,7 +32,7 @@ export default class HomeScreen extends Component {
                     systemIcon={'bookmarks'}
                     selected={this.state.tab === 'bookmarks'}
                 >
-                    <Text>Bookmarks</Text>
+                    
                 </TabBarIOS.Item>
             </TabBarIOS>
         );
